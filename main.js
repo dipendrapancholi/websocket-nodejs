@@ -2,7 +2,6 @@ const WebSocket = require('ws');
 const fs = require('fs');
 
 const wss = new WebSocket.Server({ port: 8080 });
-//const wss = new WebSocket('ws://thekallective.com/ready');
 
 function thkGenerateRandomValue(min, max) {
     return (Math.random() * (max - min) + min).toFixed(2);
