@@ -1,0 +1,14 @@
+{
+    "class":"_highlighted",
+    "count":"2",
+    "dynamic_price_main": {
+                "233535":{
+                    "min_price": "40.00",
+                    "max_price": "60.00"
+                },
+                "233366":{
+                    "min_price": "40.00",
+                    "max_price": "50.00"
+                }
+            }
+}

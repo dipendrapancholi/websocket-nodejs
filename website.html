@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>WebSocket Data</title>
+    </head>
+
+    <body>
+        <div id="data-container">
+            <!-- JSON data will be displayed here -->
+        </div>
+
+        <script type="text/javascript">
+            // WebSocket connection to your server
+            const ws = new WebSocket('ws://localhost:8080'); 
+
+            ws.onmessage = (event) => {
+                const data = JSON.parse(event.data);
+                // Update your HTML content with the data as needed
+                const dataContainer = document.getElementById('data-container');
+                dataContainer.textContent = JSON.stringify(data, null, 2);
+            };
+        </script>
+    </body>
+</html>
